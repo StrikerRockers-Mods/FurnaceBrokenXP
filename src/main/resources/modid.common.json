@@ -1,8 +1,9 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "io.github.strikerrocker.brokenxp.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "FurnaceMixin"
   ],
   "injectors": {
     "defaultRequire": 1

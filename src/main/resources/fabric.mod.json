@@ -1,15 +1,14 @@
 {
-  "id": "modid",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "id": "brokenxp",
+  "name": "Broken XP",
+  "description": "Drops stored xp in a furnace when its brokem",
   "version": "1.0.0",
   "side": "universal",
-  "initializer": "net.fabricmc.example.ExampleMod",
+  "initializer": "io.github.strikerrocker.brokenxp.BrokenXP",
   "requires": {
     "fabric": "*"
   },
   "mixins": {
-    "client": "modid.client.json",
     "common": "modid.common.json"
   }
 }
