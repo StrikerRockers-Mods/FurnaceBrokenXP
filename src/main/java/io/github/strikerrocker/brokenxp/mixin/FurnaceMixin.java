@@ -7,7 +7,7 @@ import net.minecraft.block.entity.AbstractFurnaceBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.ExperienceOrbEntity;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.recipe.cooking.AbstractCookingRecipe;
+import net.minecraft.recipe.cooking.CookingRecipe;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
@@ -58,7 +58,7 @@ public class FurnaceMixin {
                 }
 
                 for (Map.Entry<Identifier, Integer> map : recipesUsed.entrySet()) {
-                    var2.getRecipeManager().get(map.getKey()).ifPresent((recipe_1) -> spawnXp(var2, map.getValue(), ((AbstractCookingRecipe) recipe_1).getExperience(), var3));
+                    var2.getRecipeManager().get(map.getKey()).ifPresent((recipe_1) -> spawnXp(var2, map.getValue(), ((CookingRecipe) recipe_1).getExperience(), var3));
                 }
             }
         }

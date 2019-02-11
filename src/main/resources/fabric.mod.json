@@ -2,9 +2,11 @@
   "id": "brokenxp",
   "name": "Broken XP",
   "description": "Drops stored xp in a furnace when its brokem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "side": "universal",
-  "initializer": "io.github.strikerrocker.brokenxp.BrokenXP",
+  "initializers": [
+    "io.github.strikerrocker.brokenxp.BrokenXP"
+  ],
   "requires": {
     "fabric": "*"
   },

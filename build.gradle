@@ -6,16 +6,16 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 archivesBaseName = "brokenxp"
-version = "1.0.1"
+version = "1.0.2"
 
 minecraft {
 }
 
 dependencies {
-	minecraft "com.mojang:minecraft:19w03c"
-	mappings "net.fabricmc:yarn:19w03c.1"
-	modCompile "net.fabricmc:fabric-loader:0.3.2.96"	
+	minecraft "com.mojang:minecraft:19w06a"
+	mappings "net.fabricmc:yarn:19w06a.4"
+	modCompile "net.fabricmc:fabric-loader:0.3.5.106"	
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modCompile "net.fabricmc:fabric:0.1.4.76"	
+	modCompile "net.fabricmc:fabric:0.2.0.92"	
 }
