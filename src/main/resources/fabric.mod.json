@@ -1,16 +1,26 @@
 {
+  "schemaVersion": 1,
   "id": "brokenxp",
+  "version": "${version}",
   "name": "Broken XP",
-  "description": "Drops stored xp in a furnace when its brokem",
-  "version": "1.0.2",
-  "side": "universal",
-  "initializers": [
-    "io.github.strikerrocker.brokenxp.BrokenXP"
+  "description": "Drops stored xp in a furnace when its broken",
+  "authors": [
+    "StrikerRocker"
   ],
+  "contact": {
+    "sources": "https://github.com/StrikerRockers-Mods/FurnaceBrokenXP"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.strikerrocker.brokenxp.BrokenXP"
+    ]
+  },
   "requires": {
+    "fabricloader": ">=0.4.0",
     "fabric": "*"
   },
-  "mixins": {
-    "common": "modid.common.json"
-  }
+  "mixins": [
+    "modid.common.json"
+  ]
 }
